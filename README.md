@@ -2,7 +2,7 @@
 PWM for ESP32 Platforms
 
 # Installation <sup>[1](#references)</sup>
-From the [ArduinoAsync](https://github.com/ianmclinden/ESP32PWM) repo, select `Clone or download > Download ZIP`, or use the [direct download link](https://github.com/ianmclinden/ESP32PWM/archive/master.zip).
+From the [ESP32PWM](https://github.com/ianmclinden/ESP32PWM) repo, select `Clone or download > Download ZIP`, or use the [direct download link](https://github.com/ianmclinden/ESP32PWM/archive/master.zip).
 
 In the Arduino IDE, navigate to `Sketch > Include Library > Add .ZIP Library`. At the top of the drop down list, select the option to `Add .ZIP Library`.  
 
