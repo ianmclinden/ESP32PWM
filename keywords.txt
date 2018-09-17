@@ -1,0 +1,34 @@
+#######################################
+# Syntax Coloring Map For Test
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+begin	KEYWORD2
+
+analogWrite	KEYWORD2
+analogRead	KEYWORD2
+
+setDuty	KEYWORD2
+
+enable	KEYWORD2
+disable	KEYWORD2
+isEnabled	KEYWORD2
+
+setFrequency	KEYWORD2
+getFrequency	KEYWORD2
+
+#######################################
+# Instances (KEYWORD2)
+#######################################
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
