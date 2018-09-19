@@ -26,7 +26,6 @@ ESP32PWM::ESP32PWM(int pin) {
 // ---- Begin -----------------------------------------------------------------
 void ESP32PWM::begin() {
 	ledcSetup(_channel, _frequency, 8);
-	ledcAttachPin(_pin, _channel);
 }
 
 // ---- PWM Duty Handlers -----------------------------------------------------
@@ -44,10 +43,12 @@ void ESP32PWM::setDuty(uint8_t value) {
 // ---- Pin State Handlers ----------------------------------------------------
 void ESP32PWM::enable() {
 	_enabled = true;
+	ledcAttachPin(_pin, _channel);
 	ledcWrite(_channel, _duty);
 }
 void ESP32PWM::disable() {
 	_enabled = false;
+	ledcDetachPin(_pin);
 	ledcWrite(_channel, 0);
 }
 bool ESP32PWM::isEnabled() {
