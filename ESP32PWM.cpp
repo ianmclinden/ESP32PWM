@@ -48,8 +48,8 @@ void ESP32PWM::enable() {
 }
 void ESP32PWM::disable() {
 	_enabled = false;
-	ledcDetachPin(_pin);
 	ledcWrite(_channel, 0);
+	ledcDetachPin(_pin);
 }
 bool ESP32PWM::isEnabled() {
 	return _enabled;
